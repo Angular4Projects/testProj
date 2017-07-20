@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  obj = {
+    id  : "1",
+    name  : "vamshi"
+  }
+  arr=["abc","def","ghi"];
+  isTrue=true;
+  myName="Vamshi";
 }

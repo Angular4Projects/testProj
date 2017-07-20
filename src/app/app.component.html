@@ -23,3 +23,17 @@
 <a routerLink="/member">Member</a>
 <a routerLink="/product">Product</a>
 <router-outlet></router-outlet>
+<br>
+My name is {{obj.name}}
+<ul>
+  <li *ngFor="let i of arr">
+    {{i}}
+  </li>
+</ul>
+<p *ngIf="isTrue">Prints when isTrue is set to true</p>
+<p *ngIf="!isTrue; else firstTemplate">Prints when isTrue is set to true</p>
+<p *ngIf="isTrue;then secondTemplate else thirdTemplate">Prints when isTrue is set to true</p>
+<ng-template #firstTemplate>This is my first template</ng-template><br>
+<ng-template #secondTemplate>This is my second template</ng-template><br>
+<ng-template #thirdTemplate>This is my third template</ng-template>
+<p *ngIf="myName=='Vamshi'">Yeah! this is your name</p>
